@@ -1,5 +1,5 @@
 ---
-name: somtoday-acceptatiecriteria
+name: harmony-acceptatiecriteria
 description: >
   Schrijft, herschrijft en verscherpt functionele acceptatiecriteria (AC) voor Jira-stories op
   basis van Figma-designs, screenshots, feature-beschrijvingen of ruwe notities.

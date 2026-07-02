@@ -4,7 +4,7 @@ Een bundel skills die de handoff van design naar development bij Topicus Educati
 
 ## Skills
 
-### somtoday-acceptatiecriteria
+### harmony-acceptatiecriteria
 Schrijft, herschrijft en verscherpt functionele acceptatiecriteria (AC) voor Jira-stories op basis van Figma-designs, screenshots, feature-beschrijvingen of ruwe notities.
 
 **Gebruik:**
