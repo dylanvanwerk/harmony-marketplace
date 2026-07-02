@@ -1,0 +1,8 @@
+{
+  "name": "harmony-marketplace",
+  "description": "Marketplace met Claude Code plugins voor het Harmony/Topicus team.",
+  "owner": {
+    "name": "Dylan Foks"
+  },
+  "plugins": []
+}
