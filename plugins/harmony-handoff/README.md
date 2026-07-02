@@ -1,10 +1,10 @@
-# Somtoday-Handoff Plugin
+# Harmony-Handoff Plugin
 
 Een bundel skills die de handoff van design naar development bij Topicus Education versnelt en verbetert.
 
 ## Skills
 
-### harmony-acceptatiecriteria
+### acceptatie-criteria
 Schrijft, herschrijft en verscherpt functionele acceptatiecriteria (AC) voor Jira-stories op basis van Figma-designs, screenshots, feature-beschrijvingen of ruwe notities.
 
 **Gebruik:**

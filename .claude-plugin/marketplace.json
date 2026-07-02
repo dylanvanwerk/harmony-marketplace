@@ -6,9 +6,9 @@
   },
   "plugins": [
     {
-      "name": "somtoday-handoff",
+      "name": "harmony-handoff",
       "description": "Een bundel handige skills die de handoff van design naar development bij Somtoday versnelt en verbetert — van het schrijven van scherpe acceptatiecriteria tot het reviewen van Figma-designs op volledigheid en WCAG-conformiteit.",
-      "source": "./plugins/somtoday-handoff"
+      "source": "./plugins/harmony-handoff"
     }
   ]
 }

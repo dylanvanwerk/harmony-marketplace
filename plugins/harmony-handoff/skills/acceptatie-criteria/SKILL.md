@@ -1,5 +1,5 @@
 ---
-name: harmony-acceptatiecriteria
+name: acceptatie-criteria
 description: >
   Schrijft, herschrijft en verscherpt functionele acceptatiecriteria (AC) voor Jira-stories op
   basis van Figma-designs, screenshots, feature-beschrijvingen of ruwe notities.

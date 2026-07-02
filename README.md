@@ -7,7 +7,7 @@ Een Claude Code plugin-marketplace. De map `plugins/` bevat de plugins, en
 
 | Plugin | Omschrijving |
 |--------|--------------|
-| **somtoday-handoff** | Bundel skills die de handoff van design naar development bij Somtoday versnelt: acceptatiecriteria schrijven/verscherpen op basis van Figma-designs, screenshots of notities. |
+| **harmony-handoff** | Bundel skills die de handoff van design naar development bij Somtoday versnelt: acceptatiecriteria schrijven/verscherpen op basis van Figma-designs, screenshots of notities. |
 
 ## Installeren
 
