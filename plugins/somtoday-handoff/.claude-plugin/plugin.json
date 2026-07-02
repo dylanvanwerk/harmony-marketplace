@@ -1,0 +1,9 @@
+{
+  "name": "somtoday-handoff",
+  "version": "0.2.0",
+  "description": "Een bundel handige skills die de handoff van design naar development bij Somtoday versnelt en verbetert — van het schrijven van scherpe acceptatiecriteria tot het reviewen van Figma-designs op volledigheid en WCAG-conformiteit.",
+  "author": {
+    "name": "Topicus Education — UX Team"
+  },
+  "keywords": ["somtoday", "handoff", "design", "development", "acceptatiecriteria", "figma", "ux", "jira"]
+}

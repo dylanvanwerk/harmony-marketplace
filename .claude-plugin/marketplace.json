@@ -4,5 +4,11 @@
   "owner": {
     "name": "Dylan Foks"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "somtoday-handoff",
+      "description": "Een bundel handige skills die de handoff van design naar development bij Somtoday versnelt en verbetert — van het schrijven van scherpe acceptatiecriteria tot het reviewen van Figma-designs op volledigheid en WCAG-conformiteit.",
+      "source": "./plugins/somtoday-handoff"
+    }
+  ]
 }

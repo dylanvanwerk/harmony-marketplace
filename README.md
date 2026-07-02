@@ -1,8 +1,13 @@
 # Harmony Marketplace
 
-Een Claude Code plugin-marketplace. Deze repo bevat (nog) geen plugins — de map
-`plugins/` is de plek waar nieuwe plugins bijkomen, en `.claude-plugin/marketplace.json`
-registreert welke plugins beschikbaar zijn.
+Een Claude Code plugin-marketplace. De map `plugins/` bevat de plugins, en
+`.claude-plugin/marketplace.json` registreert welke plugins beschikbaar zijn.
+
+## Plugins
+
+| Plugin | Omschrijving |
+|--------|--------------|
+| **somtoday-handoff** | Bundel skills die de handoff van design naar development bij Somtoday versnelt: acceptatiecriteria schrijven/verscherpen op basis van Figma-designs, screenshots of notities. |
 
 ## Installeren
 
