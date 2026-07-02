@@ -26,6 +26,40 @@ Zodra er plugins in `marketplace.json` staan, installeer je er een met:
 Collega's die deze repo kunnen zien (public repo) kunnen bovenstaande stappen zelf
 uitvoeren om bij dezelfde marketplace te komen.
 
+## Updaten
+
+Wijzigingen in deze repo komen niet automatisch aan bij collega's — dit is
+pull-based, niet push-based. Zij moeten zelf updaten:
+
+1. **Marketplace-catalogus verversen** (haalt alleen de metadata uit
+   `marketplace.json` opnieuw op, update geen geïnstalleerde plugins):
+
+   ```
+   /plugin marketplace update dylanvanwerk/harmony-marketplace
+   ```
+
+2. **Een al-geïnstalleerde plugin bijwerken** — dit gebeurt niet automatisch bij
+   stap 1, dus opnieuw installeren:
+
+   ```
+   /plugin uninstall <plugin-naam>
+   /plugin install <plugin-naam>
+   ```
+
+3. **Actieve sessie laten oppikken:**
+
+   ```
+   /reload-plugins
+   ```
+
+   Zonder deze stap blijft de oude versie van de plugin/skill actief in een
+   lopende sessie.
+
+Wil je dit niet elke keer handmatig doen? Zet auto-update aan per marketplace via
+`/plugin` → **Marketplaces** → `harmony-marketplace` → **Enable auto-update**. Dat
+verversert automatisch de catalogus, maar een al-geïnstalleerde plugin moet je
+dan nog steeds zelf opnieuw installeren om de nieuwste versie te krijgen.
+
 ## Structuur
 
 ```
@@ -70,4 +104,5 @@ uitvoeren om bij dezelfde marketplace te komen.
    ```
 
 4. Commit en push. Iedereen die de marketplace al heeft toegevoegd krijgt de nieuwe
-   plugin te zien bij `/plugin marketplace update`.
+   plugin te zien na een marketplace-update (zie [Updaten](#updaten)) — daarna
+   installeren ze de plugin zelf met `/plugin install <plugin-naam>`.
