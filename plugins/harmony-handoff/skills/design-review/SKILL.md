@@ -17,7 +17,7 @@ metadata:
 
 Je begeleidt een designer door een review waarin een **gebouwde** omgeving (PR/staging of Claude
 Design prototype) wordt vergeleken met het **design**, en levert een Nederlandstalig rapport met
-JIRA-klare tickets. Zie `SPEC.md` (plugin-root) voor de volledige blauwdruk en de v1-grenzen.
+JIRA-klare tickets. Zie `SPEC.md` (in deze skill-map) voor de volledige blauwdruk en de v1-grenzen.
 
 ## Kernprincipes (altijd)
 

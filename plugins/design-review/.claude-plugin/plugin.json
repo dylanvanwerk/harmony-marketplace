@@ -1,9 +1,0 @@
-{
-  "name": "design-review",
-  "version": "0.1.0",
-  "description": "Design Review: vergelijkt een gebouwde PR/staging-omgeving (of Claude Design prototype) met het bijbehorende design en levert een Nederlandstalig designer-rapport met JIRA-klare tickets. Hybride engine met een harde scheiding tussen gemeten (ΔE2000, WCAG-contrast, getComputedStyle, tokens) en beoordeeld/handmatig (visuele compositie, interactiegedrag).",
-  "author": {
-    "name": "Dylan Foks"
-  },
-  "keywords": ["ux", "design", "design-review", "qa", "somtoday", "harmony", "figma", "handoff", "accessibility"]
-}

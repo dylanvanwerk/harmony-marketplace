@@ -1,9 +1,9 @@
 {
   "name": "harmony-handoff",
   "version": "0.2.0",
-  "description": "Een bundel handige skills die de handoff van design naar development bij Somtoday versnelt en verbetert — van het schrijven van scherpe acceptatiecriteria tot het reviewen van Figma-designs op volledigheid en WCAG-conformiteit.",
+  "description": "Een bundel skills die de handoff van design naar development bij Somtoday versnelt en verbetert: acceptatiecriteria schrijven/verscherpen (acceptatie-criteria) en een gebouwde PR/staging vergelijken met het design (design-review), met een Nederlandstalig rapport en JIRA-klare tickets.",
   "author": {
     "name": "Topicus Education — UX Team"
   },
-  "keywords": ["somtoday", "handoff", "design", "development", "acceptatiecriteria", "figma", "ux", "jira"]
+  "keywords": ["somtoday", "handoff", "design", "development", "acceptatiecriteria", "design-review", "qa", "figma", "ux", "jira", "accessibility"]
 }
