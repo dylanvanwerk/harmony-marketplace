@@ -9,6 +9,11 @@
       "name": "harmony-handoff",
       "description": "Een bundel handige skills die de handoff van design naar development bij Somtoday versnelt en verbetert — van het schrijven van scherpe acceptatiecriteria tot het reviewen van Figma-designs op volledigheid en WCAG-conformiteit.",
       "source": "./plugins/harmony-handoff"
+    },
+    {
+      "name": "design-review",
+      "description": "Vergelijkt een gebouwde PR/staging-omgeving (of Claude Design prototype) met het bijbehorende design en levert een Nederlandstalig designer-rapport met JIRA-klare tickets. Hybride engine met een harde scheiding tussen gemeten (ΔE2000, WCAG-contrast, getComputedStyle, tokens) en beoordeeld/handmatig (visuele compositie, interactiegedrag).",
+      "source": "./plugins/design-review"
     }
   ]
 }

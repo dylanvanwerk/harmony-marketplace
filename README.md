@@ -8,6 +8,7 @@ Een Claude Code plugin-marketplace. De map `plugins/` bevat de plugins, en
 | Plugin | Omschrijving |
 |--------|--------------|
 | **harmony-handoff** | Bundel skills die de handoff van design naar development bij Somtoday versnelt: acceptatiecriteria schrijven/verscherpen op basis van Figma-designs, screenshots of notities. |
+| **design-review** | Vergelijkt een gebouwde PR/staging-omgeving (of Claude Design prototype) met het design en levert een Nederlandstalig rapport met JIRA-klare tickets — met een harde scheiding tussen gemeten en beoordeeld/handmatig. |
 
 ## Installeren
 
