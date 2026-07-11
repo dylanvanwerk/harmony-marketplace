@@ -8,6 +8,7 @@ Een Claude Code plugin-marketplace. De map `plugins/` bevat de plugins, en
 | Plugin | Omschrijving |
 |--------|--------------|
 | **harmony-handoff** | Bundel skills die de handoff van design naar development bij Somtoday versnelt: acceptatiecriteria schrijven/verscherpen (`acceptatie-criteria`) en een gebouwde PR/staging vergelijken met het design (`design-review`), met een Nederlandstalig rapport en JIRA-klare tickets. |
+| **harmony-build** | Bouwt snel en goedkoop niet-Harmony medium-fidelity klikbare wireframes (prototypes) om usability te toetsen bij docenten, medewerkers, leerlingen en ouders. Bewust "niet-af" met een vaste kit, tot aan de goedgekeurde wireframe; daarna handoff naar de Harmony-route. |
 
 ## Installeren
 
