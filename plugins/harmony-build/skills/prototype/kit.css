@@ -1,0 +1,130 @@
+/* ==========================================================================
+   PROTOTYPE-KIT — vaste medium-fidelity wireframe look
+   Grayscale + één neutraal blauw accent. Inline in élk artifact plakken.
+   Bewust "niet-af": geen merkstijl, geen iconensets, geen schaduw-opsmuk.
+   Doel: het gesprek gaat over flow & begrijpelijkheid, niet over styling.
+   ========================================================================== */
+
+:root {
+  /* Grayscale-schaal */
+  --g0:#ffffff; --g1:#f5f6f7; --g2:#e7e9ec; --g3:#d4d8dd;
+  --g4:#b4bac1; --g5:#8b929b; --g6:#5f666e; --g7:#3a4046; --g8:#20242a;
+
+  /* Eén accent: neutraal blauw. Spaarzaam gebruiken (primaire actie, focus). */
+  --accent:#3b6fb0; --accent-weak:#e6eef7; --accent-ink:#1f4a80;
+
+  /* Semantiek (grijs-neutraal, alleen waar de taak het vraagt) */
+  --ink:var(--g8); --ink-soft:var(--g6); --line:var(--g3); --surface:var(--g0); --canvas:var(--g1);
+
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px; --sp-8:48px;
+  --radius:8px; --radius-sm:5px;
+  --touch:44px;                 /* minimale touch-target (mobiel) */
+  --font: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Bewust één vaste "papier"-look, ongeacht viewer-thema: een wireframe
+   moet neutraal en voorspelbaar zijn tijdens een toets. */
+* { box-sizing:border-box; }
+body { margin:0; font-family:var(--font); color:var(--ink); background:var(--canvas);
+       line-height:1.45; -webkit-font-smoothing:antialiased; }
+h1,h2,h3,h4 { margin:0 0 var(--sp-3); line-height:1.25; font-weight:650; }
+h1{font-size:22px;} h2{font-size:18px;} h3{font-size:15px;} p{margin:0 0 var(--sp-3);}
+small,.muted{color:var(--ink-soft);} a{color:var(--accent-ink);}
+
+/* --- Frames -------------------------------------------------------------- */
+/* Desktop: kale brede werkbank. Mobiel: telefoon-frame eromheen. */
+.wb { max-width:1280px; margin:0 auto; padding:var(--sp-5); }
+
+.phone { width:390px; margin:var(--sp-6) auto; background:var(--g8);
+  border-radius:38px; padding:12px; box-shadow:0 0 0 2px var(--g7) inset; }
+.phone__screen { background:var(--surface); border-radius:28px; overflow:hidden;
+  height:780px; display:flex; flex-direction:column; position:relative; }
+.phone__notch { height:26px; display:flex; align-items:center; justify-content:center; }
+.phone__notch::after{ content:""; width:110px; height:6px; border-radius:6px; background:var(--g6); }
+.phone__body { flex:1; overflow-y:auto; }
+
+/* --- Primitives ---------------------------------------------------------- */
+.card { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:var(--sp-4); }
+.stack > * + * { margin-top:var(--sp-3); }
+.row { display:flex; gap:var(--sp-3); align-items:center; }
+.row--between { justify-content:space-between; }
+.grid { display:grid; gap:var(--sp-4); }
+
+.btn { font:inherit; min-height:var(--touch); padding:0 var(--sp-4); border-radius:var(--radius-sm);
+  border:1px solid var(--g4); background:var(--g1); color:var(--ink); cursor:pointer; }
+.btn--primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+.btn--ghost { background:transparent; border-color:transparent; color:var(--accent-ink); }
+
+.field label{ display:block; font-size:13px; color:var(--ink-soft); margin-bottom:var(--sp-1); }
+.field input,.field select,.field textarea{ width:100%; min-height:var(--touch); font:inherit;
+  padding:var(--sp-2) var(--sp-3); border:1px solid var(--g4); border-radius:var(--radius-sm);
+  background:var(--surface); color:var(--ink); }
+:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+.badge{ display:inline-block; font-size:12px; padding:2px var(--sp-2); border-radius:20px;
+  background:var(--g2); color:var(--g7); }
+.badge--accent{ background:var(--accent-weak); color:var(--accent-ink); }
+
+table{ width:100%; border-collapse:collapse; }
+th,td{ text-align:left; padding:var(--sp-2) var(--sp-3); border-bottom:1px solid var(--line); }
+th{ font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-soft); }
+
+.list{ list-style:none; margin:0; padding:0; }
+.list li{ padding:var(--sp-3); border-bottom:1px solid var(--line); }
+
+/* Placeholder-beeld: bewust een kruis-blok, nooit een echte foto */
+.ph{ background:repeating-linear-gradient(-45deg,var(--g2),var(--g2) 8px,var(--g1) 8px,var(--g1) 16px);
+  border:1px solid var(--line); border-radius:var(--radius-sm); display:grid; place-items:center;
+  color:var(--g5); font-size:12px; min-height:80px; }
+
+/* --- Navigatie / tabs ---------------------------------------------------- */
+.topbar{ display:flex; align-items:center; gap:var(--sp-3); padding:var(--sp-3) var(--sp-4);
+  border-bottom:1px solid var(--line); background:var(--surface); position:sticky; top:0; z-index:5; }
+.tabbar{ display:flex; gap:var(--sp-1); border-bottom:1px solid var(--line); }
+.tabbar button{ font:inherit; border:0; background:none; padding:var(--sp-3) var(--sp-4);
+  border-bottom:2px solid transparent; color:var(--ink-soft); cursor:pointer; }
+.tabbar button[aria-selected="true"]{ color:var(--ink); border-bottom-color:var(--accent); }
+.bottomnav{ display:flex; border-top:1px solid var(--line); background:var(--surface); }
+.bottomnav button{ flex:1; min-height:56px; border:0; background:none; font-size:12px;
+  color:var(--ink-soft); cursor:pointer; }
+.bottomnav button[aria-current="page"]{ color:var(--accent-ink); }
+
+/* --- "Buiten scope": zichtbaar maar inactief (happy-path prototype) ------ */
+[data-dead]{ opacity:.55; cursor:not-allowed; }
+[data-dead]:hover{ position:relative; }
+
+/* --- Menu / submenu (disclosure) ---------------------------------------- */
+.menu{ position:relative; }
+.menu__panel{ position:absolute; z-index:20; min-width:200px; background:var(--surface);
+  border:1px solid var(--line); border-radius:var(--radius); padding:var(--sp-1);
+  box-shadow:0 6px 20px rgba(0,0,0,.10); }
+.menu__panel[hidden]{ display:none; }
+.menu__panel button{ display:block; width:100%; text-align:left; font:inherit; border:0;
+  background:none; padding:var(--sp-2) var(--sp-3); border-radius:var(--radius-sm); cursor:pointer; }
+.menu__panel button:hover{ background:var(--g1); }
+
+/* --- Tooltip ------------------------------------------------------------- */
+.tip{ position:relative; border-bottom:1px dashed var(--g4); cursor:help; }
+.tip::after{ content:attr(data-tip); position:absolute; left:0; bottom:calc(100% + 6px);
+  background:var(--g8); color:#fff; font-size:12px; padding:6px 8px; border-radius:6px;
+  white-space:nowrap; opacity:0; pointer-events:none; transition:opacity .12s; z-index:30; }
+.tip:hover::after,.tip:focus::after{ opacity:1; }
+
+/* --- Modal --------------------------------------------------------------- */
+.scrim{ position:fixed; inset:0; background:rgba(20,24,28,.45); display:grid; place-items:center; z-index:40; }
+.scrim[hidden]{ display:none; }
+.modal{ background:var(--surface); border-radius:var(--radius); padding:var(--sp-5);
+  width:min(440px,92vw); }
+
+/* --- Meerdere schermen in één artifact ---------------------------------- */
+.screen{ display:none; }
+.screen.is-active{ display:block; }
+
+/* --- Notitielaag (default UIT) ------------------------------------------ */
+body[data-notes="on"] .callout{ display:inline-flex; }
+.callout{ display:none; align-items:center; justify-content:center; width:22px; height:22px;
+  border-radius:50%; background:var(--accent); color:#fff; font-size:12px; font-weight:700;
+  vertical-align:super; margin-left:4px; cursor:help; }
+.callout[data-note]::after{ content:attr(data-note); }        /* tekst via tooltip-patroon apart */
+.notes-toggle{ position:fixed; right:16px; bottom:16px; z-index:60; }

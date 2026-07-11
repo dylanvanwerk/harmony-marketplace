@@ -9,6 +9,11 @@
       "name": "harmony-handoff",
       "description": "Een bundel skills die de handoff van design naar development bij Somtoday versnelt en verbetert: acceptatiecriteria schrijven/verscherpen (acceptatie-criteria) en een gebouwde PR/staging vergelijken met het design (design-review), met een Nederlandstalig rapport en JIRA-klare tickets.",
       "source": "./plugins/harmony-handoff"
+    },
+    {
+      "name": "harmony-build",
+      "description": "Bouwt snel en goedkoop niet-Harmony medium-fidelity klikbare wireframes (prototypes) om usability te toetsen bij docenten, medewerkers, leerlingen en ouders. Bewust 'niet-af' met een vaste kit, tot aan de goedgekeurde wireframe; daarna handoff naar de Harmony-route.",
+      "source": "./plugins/harmony-build"
     }
   ]
 }

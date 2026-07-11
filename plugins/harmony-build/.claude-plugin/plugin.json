@@ -1,0 +1,9 @@
+{
+  "name": "harmony-build",
+  "version": "0.1.0",
+  "description": "Bouwt snel en goedkoop niet-Harmony medium-fidelity klikbare wireframes (prototypes) om usability te toetsen bij docenten, medewerkers, leerlingen en ouders. Bewust 'niet-af' — grayscale + één blauw accent, vaste kit — tot aan de goedgekeurde wireframe; daarna handoff naar de Harmony-route.",
+  "author": {
+    "name": "Topicus Education — UX Team"
+  },
+  "keywords": ["somtoday", "prototype", "wireframe", "medium-fidelity", "usability", "ux", "toetsen", "harmony"]
+}
